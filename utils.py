@@ -16,7 +16,7 @@ def load_data(dataset_name):
         users_BA = pd.read_table("./data/BeerAdvocate/users.csv", sep=",")
         ratings_BA = pd.read_table("./data/BeerAdvocate/ratings.csv", sep=",")
         return beers_BA, breweries_BA, users_BA, ratings_BA
-    elif dataset_name == "matched":
+    elif dataset_name == "MD":
         # Data from MatchedDataset 'MD'
         beers_MD = pd.read_table("./data/matched_beer_data/beers.csv", sep=",")
         breweries_MD = pd.read_table("./data/matched_beer_data/breweries.csv", sep=",")
@@ -50,7 +50,14 @@ def ratings_text_to_csv(txt_path):
 def populate_ratings(ratings, users, breweries, beers, dataset_name):
     """
     Add all available information to the ratings with respect to the corresponding beer, brewery, user and dataset_name
+    Rename some columns for clarity
     """
+    
+    # Rename
+    users = users.rename(columns={"location":"user_location"})
+    breweries = breweries.rename(columns={"id":"brewery_id","location":"brewery_location","name":"brewery_name"})
+
+    # Merge
     ratings_populated = ratings.merge(users ,on="user_id", how="left", suffixes=('', '_drop'))
     ratings_populated = ratings_populated.merge(breweries,on="brewery_id", how="left", suffixes=('', '_drop'))
     ratings_populated = ratings_populated.merge(beers,on="beer_id", how="left", suffixes=('', '_drop'))
