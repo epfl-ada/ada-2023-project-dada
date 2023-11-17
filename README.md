@@ -43,4 +43,4 @@ After extracting our results we need to communicate them
 
 ## (questions to TA)
 Linear regression doesn’t give causality, but our observed variates are a consequence of the brewing process. There therefore is a causal relation between our observed covariates and the brewing process (for chemical and biological reasons). Is this supposition valid in our situation ?
-To avoid problems that may arise from unobserved covariates we are thinking to find a way to do a sensitivity analysis but we don’t see a way to do it without testing for a treatment (like in slide 46 of Course 6, which is not what we are trying to achieve.
+To avoid problems that may arise from unobserved covariates we are thinking to find a way to do a sensitivity analysis but we don’t see a way to do it without testing for a treatment (like in slide 46 of [Course 6](https://docs.google.com/presentation/d/1dAAAGZLETByUCAQcPSgntHWp8lwLdjJKzgcHPGrhs8Q/edit#slide=id.gf762380974_6_404), which is not what we are trying to achieve.
