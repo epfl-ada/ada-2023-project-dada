@@ -119,3 +119,6 @@ def merge_populated_ratings(ratings_populated_BA, ratings_populated_RB, save_pat
 def save_subsample(dataframe, save_path ,frac=0.1, random_state=0):
     subsample = dataframe.sample(frac=frac, random_state=random_state)
     subsample.to_csv(save_path, index=False)
+
+def save_pickle(dataframe, save_path):
+    dataframe.to_pickle(save_path)
