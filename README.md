@@ -14,7 +14,7 @@ idea to deal with big dataset: **_Dath_** library -> https://tilburgsciencehub.c
 ## Methods
 
 ## Proposed timeline
-
+![image of planning](figures/planning.png)
 ## Internal milestones
 
 ## (questions to TA)
