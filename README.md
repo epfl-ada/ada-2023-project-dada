@@ -11,13 +11,36 @@ This research project aims to uncover the underlying factors that influence beer
 - Do breweries with smaller beer selection cater more than bigger breweries to their market ? 
 - Is the rating influenced by the number of reviews?
 
-## Additional datasets if any + Data size, feasibility
-idea to deal with big dataset: **_Dath_** library -> https://tilburgsciencehub.com/building-blocks/prepare-your-data-for-analysis/data-preparation/large-datasets-python/
-
 ## Methods
+### 1) Data Sampling
+Although we have got the original data, due to the tremendous size of the dataset, applying a stratified sampling method is necessary to balance representation across different beer types, brewery sizes, regions and practicability.
+%more details on assembly of the data set (merge, removal, etc)
+%we worked on a sampled version, will switch later
+### 2) Data Analysis
+Perform exploratory data analysis to understand distributions, detect outliers, and prepare the dataset for further analysis.
+Utilize quantitative methods such as regression analysis to identify the predictors of beer ratings. 
+Apply multivariate analysis to understand the relationships between variables. Using Linear Regression, we also keep in mind the correlation doesn’t mean causality in our analysis (for exemple we cannot say that making a beer bitter makes it better but we can say that bitter beer has higher ratings in a specific country if the data says so).
+We might employ natural language processing techniques to analyze textual reviews for sentiment and thematic content, contributing to the understanding of ratings.
+Perform further, more in depth, analysis following the results of the exploratory analysis. Find the answers to our Research Questions.
+Explore different methods to confirm, or not, or preliminary findings about the main predictors.
+After the overall analysis we will explore how they breakdown by region
+According to those results we will explore if the breweries cater to those regional characteristics
+### 3) Data Representation
+After extracting our results we need to communicate them
+- location representations
+- predictors representations
+- other ...
 
 ## Proposed timeline
 ![image of planning](figures/planning.png)
-## Internal milestones
+## Specialization of each team-member
+- Anthony will focus on : Data sampling, Data presentation, Linear Regression
+- Benjamin will explore the sentiment analysis
+- Mathieu will focus on focusing
+- Swann will focus on the final plotting of results and the implementation of different linear regression methods
+- Xingchen will focus the construction of the website and the interactive chart embedding in it.
+
 
 ## (questions to TA)
+Linear regression doesn’t give causality, but our observed variates are a consequence of the brewing process. There therefore is a causal relation between our observed covariates and the brewing process (for chemical and biological reasons). Is this supposition valid in our situation ?
+To avoid problems that may arise from unobserved covariates we are thinking to find a way to do a sensitivity analysis but we don’t see a way to do it without testing for a treatment (like in slide 46 of Course 6, which is not what we are trying to achieve.
