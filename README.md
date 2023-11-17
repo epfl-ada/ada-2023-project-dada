@@ -34,10 +34,10 @@ After extracting our results we need to communicate them
 ## Proposed timeline
 ![image of planning](figures/planning.png)
 ## Specialization of each team-member
-- Anthony will focus on : Data sampling, Data presentation, Linear Regression
-- Benjamin will explore the sentiment analysis
-- Mathieu will focus on focusing
-- Swann will focus on the final plotting of results and the implementation of different linear regression methods
+- Anthony will focus on : Data sampling, Data presentation, Linear Regression.
+- Benjamin will explore the sentiment analysis.
+- Mathieu will focus on regional analysis.
+- Swann will focus on the final plotting of results and the implementation of different linear regression methods.
 - Xingchen will focus the construction of the website and the interactive chart embedding in it.
 
 
