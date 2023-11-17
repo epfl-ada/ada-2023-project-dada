@@ -54,7 +54,8 @@ def populate_ratings(ratings, users, breweries, beers, dataset_name):
     """
     
     # Rename
-    users = users.rename(columns={"location":"user_location"})
+    users = users.rename(columns={"location":"user_location",'nbr_ratings':'user_nbr_ratings','nbr_reviews':'user_nbr_reviews'})
+    beers = beers.rename(columns={'nbr_ratings':'beer_nbr_ratings','nbr_reviews':'beer_nbr_reviews'})
     breweries = breweries.rename(columns={"id":"brewery_id","location":"brewery_location","name":"brewery_name"})
 
     # Merge
@@ -76,30 +77,40 @@ def merge_populated_ratings(ratings_populated_BA, ratings_populated_RB, save_pat
     
     # Rearrange columns order
     cols = [
-        'beer_name',
+
+        # Beers
         'beer_id',
+        'beer_name',
         'style',
         'abv',
-        'nbr_ratings',
-        'nbr_reviews',
-        'avg',
-        'ba_score',
-        'bros_score',
-        'avg_computed',
-        'zscore',
-        'overall_score',
-        'style_score',
-        'nbr_matched_valid_ratings',
-        'avg_matched_valid_ratings',
-        'joined',
+        'beer_nbr_ratings',
+        'beer_nbr_reviews',
+        #'avg',
+        #'avg_computed',
+        #'ba_score',
+        #'bros_score',
+        #'overall_score',
+        #'style_score',
+        #'zscore',
+        #'nbr_matched_valid_ratings',
+        #'avg_matched_valid_ratings',
+
+        # Breweries
         'brewery_name',
         'brewery_id',
         'brewery_location',
         'nbr_beers',
-        'date',
+        
+        # Users
         'user_name',
         'user_id',
         'user_location',
+        'user_nbr_ratings',
+        'user_nbr_reviews',
+        #'joined',
+        
+        # Ratings
+        'date',
         'appearance',
         'aroma',
         'palate',
@@ -107,7 +118,8 @@ def merge_populated_ratings(ratings_populated_BA, ratings_populated_RB, save_pat
         'overall',
         'rating',
         'text',
-        'review',
+        #'review',
+        
         'dataset'
     ]
     ratings_mixed = ratings_mixed[cols]
