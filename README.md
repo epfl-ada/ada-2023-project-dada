@@ -9,7 +9,7 @@ This research project aims to uncover the underlying factors that influence beer
 - What are the main predictors of a beer’s rating ?
 - How do those predictors regionalize ?
 - Do breweries with smaller beer selection cater more than bigger breweries to their market ? 
-- Is the rating influenced by the number of reviews?
+(- Is the rating influenced by the number of reviews?)
 
 ## Methods
 ### 1) Data Sampling
