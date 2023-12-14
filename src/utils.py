@@ -47,8 +47,8 @@ def load_data(dataset, reduced=None, reduced_limit=1e12):
         breweries_ba = pd.read_csv(DATASET_BA_DIR+'breweries.csv.zip', header=0, compression=COMPRESSION)
         users_ba = pd.read_csv(DATASET_BA_DIR+'users.csv.zip', header=0, compression=COMPRESSION)
         ratings_ba = pd.read_csv(DATASET_BA_DIR+'ratings.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        reviews_ba = pd.read_csv(DATASET_BA_DIR+'reviews.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        return beers_ba, breweries_ba, users_ba, ratings_ba, reviews_ba
+        #reviews_ba = pd.read_csv(DATASET_BA_DIR+'reviews.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
+        return beers_ba, breweries_ba, users_ba, ratings_ba#, reviews_ba
 
     # Load RateBeer dataset
     if dataset=='rb':
@@ -56,8 +56,8 @@ def load_data(dataset, reduced=None, reduced_limit=1e12):
         breweries_rb = pd.read_csv(DATASET_RB_DIR+'breweries.csv.zip', header=0, compression=COMPRESSION)
         users_rb = pd.read_csv(DATASET_RB_DIR+'users.csv.zip', header=0, compression=COMPRESSION)
         ratings_rb = pd.read_csv(DATASET_RB_DIR+'ratings.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        reviews_rb = pd.read_csv(DATASET_RB_DIR+'reviews.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        return beers_rb, breweries_rb, users_rb, ratings_rb, reviews_rb
+        #reviews_rb = pd.read_csv(DATASET_RB_DIR+'reviews.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
+        return beers_rb, breweries_rb, users_rb, ratings_rb#, reviews_rb
 
     # Load Matched dataset
     if dataset=='matched':
@@ -68,6 +68,6 @@ def load_data(dataset, reduced=None, reduced_limit=1e12):
         ratings_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings.csv.zip', header=0, compression=COMPRESSION)
         ratings_ba_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings_ba.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
         ratings_rb_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings_rb.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        ratings_with_text_ba_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings_with_text_ba.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        ratings_with_text_rb_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings_with_text_rb.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
-        return beers_matched, breweries_matched, (users_matched, users_approx_matched), (ratings_matched, ratings_ba_matched, ratings_rb_matched), (ratings_with_text_ba_matched, ratings_with_text_rb_matched)
+        #ratings_with_text_ba_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings_with_text_ba.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
+        #ratings_with_text_rb_matched = pd.read_csv(DATASET_MATCHED_DIR+'ratings_with_text_rb.csv.zip', header=0, compression=COMPRESSION, nrows=reduced)
+        return beers_matched, breweries_matched, (users_matched, users_approx_matched), (ratings_matched, ratings_ba_matched, ratings_rb_matched)#, (ratings_with_text_ba_matched, ratings_with_text_rb_matched)
