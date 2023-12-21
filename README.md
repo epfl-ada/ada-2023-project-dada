@@ -16,7 +16,7 @@ This research project aims to uncover the underlying factors that influence beer
 
 ## Methods
 ### 1) Dataset construction
-The first part of the project is to build the dataset that will be used for the rest of the project. This part is contained in the [preprocess notebook](src/preprocess.ipynb) jupyter notebook that has to be run at the beginning of the project. It is responsible for creating pickle the pickle saves of our dataset in order to speed up loading when using numpy. Furthermore it also provides a sampled version of the dataset, which was/is used for testing.
+The first part of the project is to build the dataset that will be used for the rest of the project. This part is contained in the [preprocess notebook](src/2.preprocess.ipynb) jupyter notebook that has to be run at the beginning of the project. It is responsible for creating pickle the pickle saves of our dataset in order to speed up loading when using numpy. Furthermore it also provides a sampled version of the dataset, which was/is used for testing.
 ### 2) Data Analysis
 Perform exploratory data analysis to understand distributions, detect outliers, and prepare the dataset for further analysis.
 Utilize quantitative methods such as regression analysis to identify the predictors of beer ratings. 
