@@ -18,14 +18,9 @@ This research project aims to uncover the underlying factors that influence beer
 ### 1) Dataset construction
 The first part of the project is to build the dataset that will be used for the rest of the project. This part is contained in the [preprocess notebook](src/2.preprocess.ipynb) jupyter notebook that has to be run at the beginning of the project. It is responsible for creating pickle the pickle saves of our dataset in order to speed up loading when using numpy. Furthermore it also provides a sampled version of the dataset, which was/is used for testing. This is also the part in which we get rid of the nan's.
 ### 2) Data Analysis
-Perform exploratory data analysis to understand distributions, detect outliers, and prepare the dataset for further analysis.
-Utilize quantitative methods such as regression analysis to identify the predictors of beer ratings. 
-Apply multivariate analysis to understand the relationships between variables. Using Linear Regression, we also keep in mind the correlation doesn’t mean causality in our analysis (for exemple we cannot say that making a beer bitter makes it better but we can say that bitter beer has higher ratings in a specific country if the data says so).
-We might employ natural language processing techniques to analyze textual reviews for sentiment and thematic content, contributing to the understanding of ratings.
-Perform further, more in depth, analysis following the results of the exploratory analysis. Find the answers to our Research Questions.
-Explore different methods to confirm, or not, or preliminary findings about the main predictors.
-After the overall analysis we will explore how they breakdown by region
-According to those results we will explore if the breweries cater to those regional characteristics
+**The first step is to find the prefered beer type per country. In order to find this we do a linear regression on the categorical data (kind of beer). This is done for each country (i.e. a linear regression per country).
+**The second step of the analysis is identifiying which breweries are local and then compare how those breweries compare to the local preferences. The definition of a local brewery was defined as a brewery for which half or more of the ratings are local. Then, the comparison part is done by z-scoring the group of local breweries against all the other breweries. Again this had to be done for each country.
+**The last step being trying to find if the review trends precedes the breweing trend or the other was around. This is done by ploting different temporal analysis.
 ### 3) Data Representation
 After extracting our results we need to communicate them
 - location representations
