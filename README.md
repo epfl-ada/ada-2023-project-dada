@@ -15,10 +15,8 @@ This research project aims to uncover the underlying factors that influence beer
 - Is the rating influenced by the number of reviews?
 
 ## Methods
-### 1) Data Sampling
-Although we have got the original data, due to the tremendous size of the dataset, applying a stratified sampling method is necessary to balance representation across different beer types, brewery sizes, regions and practicability.
-%more details on assembly of the data set (merge, removal, etc)
-%we worked on a sampled version, will switch later
+### 1) Dataset construction
+The first part of the project is to build the dataset that will be used for the rest of the project. This part is contained in the [preprocess notebook](src/2.preprocess.ipynb) jupyter notebook that has to be run at the beginning of the project. It is responsible for creating pickle the pickle saves of our dataset in order to speed up loading when using numpy. Furthermore it also provides a sampled version of the dataset, which was/is used for testing. This is also the part in which we get rid of the nan's.
 ### 2) Data Analysis
 Perform exploratory data analysis to understand distributions, detect outliers, and prepare the dataset for further analysis.
 Utilize quantitative methods such as regression analysis to identify the predictors of beer ratings. 
