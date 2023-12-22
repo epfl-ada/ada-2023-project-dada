@@ -1,6 +1,7 @@
 # ADA_Project
 
 # Decoding Regional Preferences and Ratings 
+You will find the notebook in the folder 'src'
 
 ## Data Story
 You can find out how regional preferences influence ratings [here](https://lxc1851588.github.io/DADA_web/).
@@ -33,7 +34,7 @@ In order to plot the data we use the geopandas library, which allows us to plot 
 - Anthony did the data structure.
 - Benjamin worked on the sentiment analysis.
 - Mathieu helped left and right.
-- Swann did the linear regression and z scoring of the breweries.
+- Swann did the category analysis.
 - Xingchen built the website and the interactive chart embedding in it. She also worked on the sentiment analysis
 
 
