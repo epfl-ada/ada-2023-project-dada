@@ -27,7 +27,7 @@ In order to plot the data we use the geopandas library, which allows us to plot 
 * Tendency of local breweries to produce the prefered kind of beer (on a world map, z-scoring for each country)
 * Tendency of local breweries to produce the most reviewd beer (on a world map, z-scoring for each country)
 * Positivity of comments (on a world map)
-* The last thing that has to me plotted is the time series analysis of the market (what fraction of the beers or reviews does a category occupy a given time).
+* The last thing that has to me plotted is the time series analysis of the market (what fraction of the beers or reviews does a category occupy at a given time).
 
 
 ## Specialization of each team-member
