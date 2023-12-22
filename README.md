@@ -30,9 +30,9 @@ In order to plot the data we use the geopandas library, which allows us to plot 
 
 ## Specialization of each team-member
 - Anthony did the data structure.
-- Benjamin did all the sentiment analysis.
+- Benjamin worked on the sentiment analysis.
 - Mathieu helped left and right.
 - Swann did the linear regression and z scoring of the breweries.
-- Xingchen built the website and the interactive chart embedding in it.
+- Xingchen built the website and the interactive chart embedding in it. She also worked on the sentiment analysis
 
 
