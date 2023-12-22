@@ -23,7 +23,7 @@ The first part of the project is to build the dataset that will be used for the 
 * To finish the analysis, we compare the results of the fist step with a sentiment analysis of the reviews per country. This time the prefered beer category is the one which has the highest score in sentiment analysis.
 ### 3) Data Representation
 In order to plot the data we use the geopandas library, which allows us to plot data on a world map. The data to be plotted is the following:
-* Preffered Kind of beer
+* Prefered kind of beer
 
 
 ## Specialization of each team-member
