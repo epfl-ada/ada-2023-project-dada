@@ -9,10 +9,9 @@ You can find out how regional preferences influence ratings here: ADD LINK
 This research project aims to uncover the underlying factors that influence beer ratings and determine how these factors vary across different regions. The motivation behind the study includes but is not limited to understanding whether smaller breweries with limited beer selections are favored over larger ones on a global scale, how regional predictors affect beer ratings, and the pattern of the user factor’s influence on rating . We seek to tell the story of regional beer appreciation, exploring the degree of localized preferences’  impact on a beer’s success and reputation. By analyzing beer ratings and reviews, this project will identify key predictors of beer popularity, investigate regional variations in these predictors, and examine the correlation between the number of reviews and beer ratings. A critical component of the study is to establish a methodology for sourcing representative and reliable data from users to ensure the validity of our findings. The outcomes of this research will provide valuable insights for breweries to tailor their products to regional tastes and for enthusiasts to understand global beer trends.
 
 ## Research questions:
-- What are the main predictors of a beer’s rating ?
-- How do those predictors regionalize ?
-- Do breweries with smaller beer selection cater more than bigger breweries to their market ? 
-- Is the rating influenced by the number of reviews?
+- What are the preferences in terms of beers ?
+- How do those preferences regionalize ?
+- Do Breweries cater to their local markets ? 
 
 ## Methods
 ### 1) Dataset construction
@@ -20,12 +19,9 @@ The first part of the project is to build the dataset that will be used for the 
 ### 2) Data Analysis
 * The first step is to find the prefered beer type per country. In order to find this we do a linear regression on the categorical data (kind of beer). This is done for each country (i.e. a linear regression per country).
 * The second step of the analysis is identifiying which breweries are local and then compare how those breweries compare to the local preferences. The definition of a local brewery was defined as a brewery for which half or more of the ratings are local. Then, the comparison part is done by z-scoring the group of local breweries against all the other breweries. Again this had to be done for each country.
-**The last step being trying to find if the review trends precedes the breweing trend or the other was around. This is done by ploting different temporal analysis.
+* The last step being trying to find if the review trends precedes the breweing trend or the other was around. This is done by ploting different temporal analysis.
 ### 3) Data Representation
-After extracting our results we need to communicate them
-- location representations
-- predictors representations
-- other ...
+To 
 
 ## Proposed timeline
 ![image of planning](figures/planning.png)
