@@ -20,7 +20,7 @@ The first part of the project is to build the dataset that will be used for the 
 * The first step is to find the prefered beer type per country. In order to find this we do a linear regression on the categorical data (kind of beer). This is done for each country (i.e. a linear regression per country).
 * The second step of the analysis is identifiying which breweries are local and then compare how those breweries compare to the local preferences. The definition of a local brewery was defined as a brewery for which half or more of the ratings are local. Then, the comparison part is done by z-scoring the group of local breweries against all the other breweries. Again this had to be done for each country.
 * The third step being trying to find if the review trends precedes the breweing trend or the other was around. This is done by ploting different temporal analysis.
-* To finish the analysis, we compare the results of the fist step with a sentiment analysis of the reviews per country. This time the prefered beer category is the one which has the highest in sentiment analysis.
+* To finish the analysis, we compare the results of the fist step with a sentiment analysis of the reviews per country. This time the prefered beer category is the one which has the highest score in sentiment analysis.
 ### 3) Data Representation
 In order to reprensent the data, we use plot the data onto world maps.
 
